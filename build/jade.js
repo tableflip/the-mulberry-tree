@@ -14,7 +14,7 @@ var md = require('markdown-it')({
 var inputDir = path.normalize(path.join(__dirname, '..', 'pages'))
 var outputDir = path.normalize(path.join(__dirname, '..', 'dist'))
 
-find.file(/\index.jade$/, inputDir, (files) => {
+find.file(/index.jade$/, inputDir, (files) => {
   var tasks = files.map((tpl) => {
     var name = path.dirname(path.relative(inputDir, tpl))
     return {
