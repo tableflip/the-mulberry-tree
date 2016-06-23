@@ -1,9 +1,6 @@
-include icon.jade
-
 mixin navbar (page)
   nav.navbar.navbar-light.bg-faded
     a.navbar-brand(href='#{meta.relativePathToRoot}/')
-      +icon('table')
     ul.nav.navbar-nav
       li.nav-item.active
         a.nav-link(href='#{meta.relativePathToRoot}/' class={active: page === 'home'}) Home 

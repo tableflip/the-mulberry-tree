@@ -1,4 +1,5 @@
-include navbar.jade
+include icon
+include navbar
 
 doctype html
 html(lang='en')
@@ -11,6 +12,7 @@ html(lang='en')
     title=content.pageTitle
   body(class='page-#{meta.name}')
     .container
+      +icon('logo')
       +navbar(meta.name)
       block main
     script(src='#{meta.relativePathToRoot}/bundle.js')
