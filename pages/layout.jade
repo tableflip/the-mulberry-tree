@@ -1,0 +1,14 @@
+include navbar.jade
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    link(rel='stylesheet', href='#{meta.relativePathToRoot}/bundle.css')
+    title=content.pageTitle
+  body(class='page-#{meta.name}')
+    +navbar(meta.name)
+    block main
+    script(src='#{meta.relativePathToRoot}/bundle.js')
