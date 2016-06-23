@@ -1,6 +1,5 @@
 {
-	"pageTitle": "Homepage",
-	"jumbotronBg": "https://cloud.githubusercontent.com/assets/58871/14107015/46bca3e2-f5ad-11e5-8dfd-7f06f9d4461f.jpg",
-	"exampleTextField": "Foobar",
-	"exampleTextareaField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "pageTitle": "The Mulberry Tree - Home based early years setting in Exeter, Devon",
+  "title": "Here comes a very important H1 heading",
+  "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium augue vel massa finibus, dignissim sagittis enim sodales. Phasellus gravida euismod magna venenatis congue. Sed et ex non justo condimentum euismod sit amet nec massa. Etiam condimentum molestie felis et fringilla. Nam eu metus vel mauris volutpat dignissim vel et erat. Maecenas mollis ex lorem, scelerisque viverra mi vulputate a. Integer tempus, lacus vel varius imperdiet."
 }
