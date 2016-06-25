@@ -35,6 +35,7 @@
     "watch:serve": "browser-sync start --files 'dist/bundle.*' --files 'dist/*.html' --server dist"
   },
   "dependencies": {
+    "async": "^2.0.0-rc.6",
     "autoprefixer": "^6.0.3",
     "bootstrap": "^4.0.0-alpha.2",
     "browserify": "^13.0.1",
@@ -45,7 +46,9 @@
     "jquery": "^3.0.0",
     "markdown-it": "^7.0.0",
     "markdown-it-container": "^2.0.0",
+    "mkdirp": "^0.5.1",
     "npm-run-all": "^2.2.2",
+    "path-exists": "^3.0.0",
     "postcss": "^5.0.9",
     "postcss-cli": "^2.5.1",
     "postcss-import": "^8.1.2",
