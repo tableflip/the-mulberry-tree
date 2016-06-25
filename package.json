@@ -43,10 +43,13 @@
     "jadeify": "^4.6.0",
     "jquery": "^3.0.0",
     "markdown-it": "^7.0.0",
+    "markdown-it-container": "^2.0.0",
     "npm-run-all": "^2.2.2",
     "postcss": "^5.0.9",
     "postcss-cli": "^2.5.1",
     "postcss-import": "^8.1.2",
+    "require-dir": "^0.3.0",
+    "slug": "^0.9.1",
     "svg4everybody": "^2.0.3"
   },
   "devDependencies": {

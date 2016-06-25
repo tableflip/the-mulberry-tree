@@ -12,7 +12,28 @@ html(lang='en')
     title=content.pageTitle
   body(class='page-#{meta.name}')
     .container
-      +icon('logo')
-      +navbar(meta.name)
+      header.m-b-3
+        a(href='/')
+          +icon('logo')
+          .sr-only The Mulberry Tree
+        .socials
+          a(href='https://facebook.com/' target='_blank')
+            +icon('facebook')
+          a(href='https://instagram.com/' target='_blank')
+            +icon('instagram')
+        +navbar(meta.name)
       block main
+      footer.m-t-2.m-b-1
+        +icon('branch')
+        small.m-t-1.p-t-1.p-b-1
+          | #{new Date().getFullYear()} &copy; The Mulberry Tree - Home based early years setting in Exeter, Devon 
+          span.text-primary &#8226;
+          |  All rights reserved 
+          span.text-primary &#8226;
+          |  Site by #[a(href='http://kropka.design' target='_bank') Kropka] &amp; #[a(href='https://tableflip.io' target='_blank') TABLEFLIP]
+        .socials
+          a(href='https://facebook.com/' target='_blank')
+            +icon('facebook')
+          a(href='https://instagram.com/' target='_blank')
+            +icon('instagram')
     script(src='#{meta.relativePathToRoot}/bundle.js')
