@@ -9,6 +9,7 @@
 // override boostrap with our custom vars
 // See `node_modules/bootstrap/scss/_variables.scss` for more options
 $brand-primary: #E6225A;
+$brand-secondary: #397F31;
 $body-color: #9E8E7D;
 $enable-rounded: false;
 $font-family-serif: 'Roboto Slab', serif;
@@ -99,3 +100,5 @@ footer {
     }
   }
 }
+
+@import 'navbar';

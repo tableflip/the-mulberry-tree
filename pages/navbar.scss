@@ -1,0 +1,37 @@
+#nav {
+  text-align: center;
+  border-top: 1px dashed $body-color;
+  border-bottom: 1px solid $body-color;
+  padding: ($spacer-y / 2) 0;
+
+  .nav-link {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: $body-color;
+    transition: color 0.25s linear;
+
+    &::after {
+      content: '•';
+      color: $brand-primary;
+      display: inline-block;
+      padding-left: 1rem;
+    }
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+
+  .nav-item {
+    display: inline-block;
+    float: none;
+
+    &:last-child .nav-link::after {
+      content: '';
+    }
+  }
+
+  .active .nav-link {
+    color: $brand-secondary;
+  }
+}
