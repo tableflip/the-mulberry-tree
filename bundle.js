@@ -10132,7 +10132,6 @@ return jQuery;
     return svg4everybody;
 });
 },{}],3:[function(require,module,exports){
-// Shims
 require('svg4everybody')()
 window.$ = window.jQuery = require('jquery')
 
