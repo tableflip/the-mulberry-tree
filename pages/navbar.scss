@@ -1,8 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
 #nav {
-  text-align: center;
-  border-top: 1px dashed $body-color;
-  border-bottom: 1px solid $body-color;
-  padding: ($spacer-y / 2) 0;
+  padding: ($spacer-y * 3) 0 0;
+
+  &.in {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
   .nav-link {
     font-size: 0.875rem;
@@ -10,28 +31,55 @@
     color: $body-color;
     transition: color 0.25s linear;
 
-    &::after {
-      content: '•';
-      color: $brand-primary;
-      display: inline-block;
-      padding-left: 1rem;
-    }
-
     &:hover {
       color: $brand-primary;
     }
   }
 
   .nav-item {
-    display: inline-block;
     float: none;
+    margin: 0 $spacer-x * 1.5;
+    border-bottom: 1px dashed $body-color;
 
-    &:last-child .nav-link::after {
-      content: '';
+    &:last-child {
+      border-bottom: 0;
     }
   }
 
   .active .nav-link {
     color: $brand-secondary;
+  }
+}
+
+@include media-breakpoint-up (sm) {
+  .navbar {
+    position: relative;
+    padding-top: 0;
+  }
+
+  #nav {
+    padding: ($spacer-y / 2) 0;
+    text-align: center;
+    border-top: 1px dashed $body-color;
+    border-bottom: 1px solid $body-color;
+
+    .nav-link {
+      &::after {
+        content: '•';
+        color: $brand-primary;
+        display: inline-block;
+        padding-left: 1rem;
+      }
+    }
+
+    .nav-item {
+      display: inline-block;
+      margin: 0 0 0 $spacer-x;
+      border-bottom: 0;
+
+      &:last-child .nav-link::after {
+        content: '';
+      }
+    }
   }
 }
