@@ -9,38 +9,23 @@ mixin navbar (page)
             | Home 
             if page === 'home'
               span.sr-only (current)
-        li.nav-item(class={active: page === 'who-we-are'})
-          a.nav-link(href='#{meta.relativePathToRoot}/who-we-are')
-            | Who We Are 
-            if page === 'who-we-are'
-              span.sr-only (current)
         li.nav-item(class={active: page === 'what-we-do'})
           a.nav-link(href='#{meta.relativePathToRoot}/what-we-do')
             | What We Do 
             if page === 'what-we-do'
-              span.sr-only (current)
-        li.nav-item(class={active: page === 'where-we-play'})
-          a.nav-link(href='#{meta.relativePathToRoot}/where-we-play')
-            | Where We Play 
-            if page === 'where-we-play'
               span.sr-only (current)
         li.nav-item(class={active: page === 'what-they-say'})
           a.nav-link(href='#{meta.relativePathToRoot}/what-they-say')
             | What They Say 
             if page === 'what-they-say'
               span.sr-only (current)
-        li.nav-item(class={active: page === 'fees-and-setting'})
-          a.nav-link(href='#{meta.relativePathToRoot}/fees-and-setting')
-            | Fees &amp; Setting 
-            if page === 'fees-and-setting'
+        li.nav-item(class={active: page === 'what-we-offer'})
+          a.nav-link(href='#{meta.relativePathToRoot}/what-we-offer')
+            | What We Offer 
+            if page === 'what-we-offer'
               span.sr-only (current)
         li.nav-item(class={active: page === 'get-in-touch'})
           a.nav-link(href='#{meta.relativePathToRoot}/get-in-touch')
             | Get In Touch 
             if page === 'get-in-touch'
-              span.sr-only (current)
-        li.nav-item(class={active: page === 'blog'})
-          a.nav-link(href='#{meta.relativePathToRoot}/blog')
-            | Blog 
-            if page === 'blog'
               span.sr-only (current)
