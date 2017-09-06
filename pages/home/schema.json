@@ -1,5 +1,13 @@
 {
   "copy": {
     "type": "textarea"
-  }
+  },
+  "images": [{
+    "title": {
+      "type": "text"
+    },
+    "image": {
+      "type": "img"
+    }
+  }]
 }
