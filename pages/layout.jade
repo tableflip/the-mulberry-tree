@@ -21,11 +21,13 @@ html(lang='en')
             +icon('facebook')
           a(href='https://instagram.com/' target='_blank')
             +icon('instagram')
+          a(href='https://twitter.com/' target='_blank')
+            +icon('twitter')
         +navbar(meta.name)
       block main
-      footer.m-t-2.m-b-1
+      footer.m-t-3.m-b-1
         +icon('branch')
-        small.m-t-2.p-t-1.p-b-1
+        small.m-t-3.p-t-1.p-b-1
           | #{new Date().getFullYear()} &copy; The Mulberry Tree Digital Marketing 
           span.text-primary &#8226;
           |  All rights reserved 
@@ -36,4 +38,6 @@ html(lang='en')
             +icon('facebook')
           a(href='https://instagram.com/' target='_blank')
             +icon('instagram')
+          a(href='https://twitter.com/' target='_blank')
+            +icon('twitter')
     script(src='#{meta.relativePathToRoot}/bundle.js')

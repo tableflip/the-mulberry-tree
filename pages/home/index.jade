@@ -1,11 +1,11 @@
 extends ../layout
 
 block main
-  .row.m-b-1
-    each item in content.images.slice(0, 9)
-      .col-sm-4.m-b-2
-        a(href=item.image title=item.title)
-          img.img-fluid(src=uccdn.scaleCropResize(item.image, 350, 350))
   .m-b-3
     h1.text-xs-center.m-b-2=content.title
     .text-xs-center!=md.render(content.copy)
+  .row.m-b-3
+    each item in content.images.slice(0, 9)
+      .col-xs-4.m-b-2
+        a(href=item.image title=item.title)
+          img.img-fluid(src=uccdn.scaleCropResize(item.image, 350, 350))
