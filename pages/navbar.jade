@@ -14,11 +14,6 @@ mixin navbar (page)
             | What We Do 
             if page === 'what-we-do'
               span.sr-only (current)
-        li.nav-item(class={active: page === 'what-they-say'})
-          a.nav-link(href='#{meta.relativePathToRoot}/what-they-say')
-            | What They Say 
-            if page === 'what-they-say'
-              span.sr-only (current)
         li.nav-item(class={active: page === 'what-we-offer'})
           a.nav-link(href='#{meta.relativePathToRoot}/what-we-offer')
             | What We Offer 
