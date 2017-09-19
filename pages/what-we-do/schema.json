@@ -1,5 +1,19 @@
 {
-  "copy": {
-    "type": "textarea"
-  }
+  "sections": [{
+    "title": {
+      "type": "text"
+    },
+    "copy": {
+      "type": "textarea"
+    },
+    "image1": {
+      "type": "img"
+    },
+    "image2": {
+      "type": "img"
+    },
+    "image3": {
+      "type": "img"
+    }
+  }]
 }
