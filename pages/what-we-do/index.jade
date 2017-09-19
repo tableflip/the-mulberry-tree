@@ -1,0 +1,6 @@
+extends ../layout
+
+block main
+  .m-b-3
+    h1.text-xs-center.m-b-2=content.title
+    div!=md.render(content.copy)
