@@ -17,11 +17,11 @@ html(lang='en')
           +icon('logo')
           .sr-only The Mulberry Tree
         .socials
-          a(href='https://facebook.com/' target='_blank')
+          a(href=facts.facebook target='_blank')
             +icon('facebook')
-          a(href='https://instagram.com/' target='_blank')
+          a(href=facts.instagram target='_blank')
             +icon('instagram')
-          a(href='https://twitter.com/' target='_blank')
+          a(href=facts.twitter target='_blank')
             +icon('twitter')
         +navbar(meta.name)
       block main
@@ -34,10 +34,10 @@ html(lang='en')
           span.text-primary &#8226;
           |  Site by #[a(href='http://kropka.design' target='_bank') Kropka] &amp; #[a(href='https://tableflip.io' target='_blank') TABLEFLIP]
         .socials
-          a(href='https://facebook.com/' target='_blank')
+          a(href=facts.facebook target='_blank')
             +icon('facebook')
-          a(href='https://instagram.com/' target='_blank')
+          a(href=facts.instagram target='_blank')
             +icon('instagram')
-          a(href='https://twitter.com/' target='_blank')
+          a(href=facts.twitter target='_blank')
             +icon('twitter')
     script(src='#{meta.relativePathToRoot}/bundle.js')

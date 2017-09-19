@@ -1,2 +1,11 @@
 {
+  "facebook": {
+    "type": "url"
+  },
+  "instagram": {
+    "type": "url"
+  },
+  "twitter": {
+    "type": "url"
+  }
 }
