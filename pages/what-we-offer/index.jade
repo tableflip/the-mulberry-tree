@@ -2,4 +2,6 @@ extends ../layout
 
 block main
   .m-b-3
+    if content.ctaCopy
+      .text-xs-center!=md.render(content.ctaCopy)
     div!=md.render(content.copy)

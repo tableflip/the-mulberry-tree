@@ -1,35 +1,5 @@
 extends ../layout
 
 block main
-  #copy
-    .row
-      .col-lg-8
-        .m-b-2
-          div!=md.render(content.copy)
-        form#contact-form(action='https://post.tableflip.io/mulberrytreemarketing.co.uk' method='POST')
-          .form-group
-            label(for='email-field') Email
-            input#email-field.form-control(type='email' name='Email' placeholder='Your email address' required)
-          .form-group
-            label(for='message-field') Message
-            textarea#message-field.form-control(name='Message' placeholder='Please add some information about your company and what we can do to help' rows=5 required)
-          .form-group
-            button.btn.btn-primary.g-recaptcha(type='button' data-sitekey='6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4' data-callback='onContactFormSubmit') Send
-  #copy-sent(style='display:none')
-    .text-xs-center!=md.render(content.copySent)
-  script(src='https://www.google.com/recaptcha/api.js')
-  script.
-    function onContactFormSubmit () {
-      document.getElementById('contact-form').submit()
-    }
-
-    (function () {
-      var href = window.location.href
-      var copy = document.getElementById('copy')
-      var copySent = document.getElementById('copy-sent')
-
-      if (href.indexOf('?sent=true') > -1) {
-        copy.style.display = 'none'
-        copySent.style.display = 'block'
-      }
-    })()
+  .m-b-3
+    div!=md.render(content.copy)

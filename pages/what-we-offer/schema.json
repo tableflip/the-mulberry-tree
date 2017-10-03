@@ -1,4 +1,7 @@
 {
+  "ctaCopy": {
+    "type": "textarea"
+  },
   "copy": {
     "type": "textarea"
   }
